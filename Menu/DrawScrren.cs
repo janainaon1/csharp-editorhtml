@@ -1,15 +1,6 @@
-public static class Menu
+public static class DrawScreen
 {
-  public static void Show()
-  {
-    Console.Clear();
-    Console.BackgroundColor = ConsoleColor.DarkGray;
-    Console.ForegroundColor = ConsoleColor.Black;
-
-    DrawScreen();
-  }
-
-  public static void DrawScreen(short numberColumns = 30, short numberLines = 10)
+  public static void Draw(short numberColumns = 30, short numberLines = 10)
   {
     DrawColumns(numberColumns);
 
