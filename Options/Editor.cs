@@ -5,8 +5,8 @@ public static class Editor
   public static void Show() 
   {
     Console.Clear();
-    Console.BackgroundColor = ConsoleColor.White;
-    Console.ForegroundColor = ConsoleColor.Black;
+    // Console.BackgroundColor = ConsoleColor.White;
+    // Console.ForegroundColor = ConsoleColor.Black;
     Console.Clear();
 
     Console.WriteLine("MODO EDITOR");
@@ -26,5 +26,6 @@ public static class Editor
 
     Console.WriteLine("--------------------");
     Console.WriteLine(" Deseja salvar o arquivo?");
+    Viewer.Show(file.ToString());
   }
 }
